@@ -28,7 +28,7 @@ class ToDoList:
 
     
            
-    def complete_task(self):            #remove completed task
+    def remove_task(self):            #remove completed task
         """Display stored To-Do List"""
         print(self.view_list())
         print("Note:If you completed the task,That task will be removed from your to do list\nFor mark complete")
@@ -102,7 +102,7 @@ if __name__=="__main__":
         if user_choice=="1":      #inside while loop
             obj.view_list()
         elif user_choice=="2":
-            obj.complete_task()
+            obj.remove_task()
         elif user_choice=="3":
             obj.update_list()
         elif user_choice=="4":
@@ -117,6 +117,6 @@ if __name__=="__main__":
         elif choice=="n" or choice=="no":
             break
         else:
-            print("invalid input")
+            print("Invalid input")
 
 
